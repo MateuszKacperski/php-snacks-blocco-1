@@ -1,7 +1,7 @@
 <?php
-$name =$_GET['name'];
-$email = $_GET['email'];
-$number = $_GET['age'];
+$name =$_GET['name'] ?? '';
+$email = $_GET['email'] ?? '';
+$number = $_GET['age'] ?? '';
 ?>
 
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ $number = $_GET['age'];
 </head>
 <body>
     <?php
-    if (strlen($name) > 3) {
-    if (strpos($email, '@') !== false) 
-    if (strpos($email, '.') !== false)
-    if (is_numeric($number)) {
+    if (mb_strlen(trim($name)) > 3) {
+    if (str_contains($email, '@') !== false) 
+    if (str_contains($email, '.') !== false)
+    if (is_numeric($number) && $number > 0) {
         echo ' Acesso riuscito';}
 }else{echo 'Acesso negato';} ?>
     <h3></h3>
