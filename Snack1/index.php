@@ -1,19 +1,19 @@
 <?php 
 //snack 1 
 $matches = [
-    'match1' => [   'match' => 'Olimpia Milano - Cantù',
+    [   'match' => 'Olimpia Milano - Cantù',
         'hometeam' => 'Olimpia Milano',
         'awayteam'=> 'Cantù',
         'homescore' => 55,
         'awayscore' => 60
 ],
-'match2' => [   'match' => 'Miami Heat - Chicago Bulls',
+[   'match' => 'Miami Heat - Chicago Bulls',
     'hometeam' => 'Miami Heat',
     'awayteam'=> 'Chicago Bulls',
     'homescore' => 102,
     'awayscore' => 93
 ],
-'match3' => [   'match' => 'Dallas Mavericks - Los Angeles Lakers',
+ [   'match' => 'Dallas Mavericks - Los Angeles Lakers',
 'hometeam' => 'Dallas Mavericks',
 'awayteam'=> 'Los Angeles Lakers',
 'homescore' => 70,
